@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <title>Chetanya Sharma - Social Media Manager, Social Media Marketer, Content Creator From India.</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    // <======== JS Program to Execute Owl-Carousel for Testimonial-Container ========>
+    $(function () {
+      var owl = $("#testimonials-container .owl-carousel");
+      owl.owlCarousel({
+        margin: 0,
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        smartSpeed: 1500,
+        responsive: {
+          0: {
+            items: 1
+          },
+          700: {
+            items: 2
+          },
+          1200: {
+            items: 3
+          },
+          2000: {
+            items: 4
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
